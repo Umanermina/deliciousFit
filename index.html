@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <style>
+        /*Gurup Seçiciler*/
+        header,footer {
+            background-color: lightgreen;
+            padding: 20px;
+            text-align: center;
+        }
+        /*Child Selektör İle Stillendirme*/
+        .tarif_card > img { 
+            width: 300px;
+            border-radius: 10px;
+            box-shadow: 2px 2px 10px 1px grey;
+        }
+        nav > ul > li > a{
+            text-decoration: none;
+            color: grey;
+        }
+        .tarif_button {
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <header> <h4>Burasi Sayfanin Başlik Kismi</h4> </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Anasayfa</a></li>
+            <li><a href="#">Hakkimizda</a></li>
+        </ul>
+    </nav>
+    <hr>
+    <main>
+
+        <!--Resimler genişlik 300px-->
+        <div class="tarif_card">
+            <!--Resim-->
+            <img src="images/waffle.jpg">
+            <!--Başlık-->
+            <h3>Miss Gibi Waffle</h3>
+            <!--Alt Başlık-->
+            <h5><i>Böyle tarif hiç bir yerde yok</i></h5>
+            <a class="tarif_button" href="tarifler/waffle_tarif.html">Tarif İcin Tikla</a>
+        </div>
+        <hr>
+        <div class="tarif_card">
+            <!--Resim-->
+            <img src="images/texsas burger.jpg">
+            <!--Baslik-->
+            <h3>Eşsiz Texsas Burger</h3>
+            <!--Alt Baslik-->
+            <h5><i>Texsas'li Şeflerden 500 yillik eşsiz tarif</i></h5>
+            <a class="tarif_button" href="tarifler/burger_tarif.html">Tarif İcin Tikla</a>
+        </div>
+        <hr>
+        <div class="tarif_card">
+            <!--Resim-->
+            <img src="images/pancake.jpg">
+            <!--Baslik-->
+            <h3>Pancake Tarifi</h3>
+            <!--Alt Baslik-->
+            <h5><i>Amerika'li Ev Annelerinden</i></h5>
+            <a class="tarif_button" href="tarifler/pancake_tarif.html">Tarif İcin Tikla</a>
+        </div>
+        <hr>
+        <div class="tarif_card">
+            <!--Resim-->
+            <img src="images/pizza.jpg">
+            <!--Baslik-->
+            <h3> İtalyan Pizza Tarifi</h3>
+            <!--Alt Baslik-->
+            <h5><i>Danilo Chef'in <strong>Gizli</strong> Pizza Tarifi </i></h5>
+            <a class="tarif_button" href="tarifler/pizza_tarif.html">Tarif İcin Tikla</a>
+        </div>
+
+
+    </main>
+    <footer>
+        <h4>Sayfanin Alt Bilgi Kismi</h4>
+    </footer>
+</body>
+</html>
